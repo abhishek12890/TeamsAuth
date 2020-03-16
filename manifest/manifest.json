@@ -1,0 +1,78 @@
+﻿{
+  "$schema": "https://statics.teams.microsoft.com/sdk/v1.2/manifest/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.2",
+  "version": "1.0",
+  "id": "349f9ea5-a6ee-4993-b256-8bbc38d3c68c",
+  "packageName": "com.microsoft.teams.samples.auth",
+  "developer": {
+    "name": "Deepika",
+    "websiteUrl": "https://localbottestapp.azurewebsites.net/",
+    "privacyUrl": "https://privacy.microsoft.com/PrivacyStatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement/"
+  },
+  "name": {
+    "short": "Teams AuthBot"
+  },
+  "description": {
+    "short": "Authentication sample for Microsoft Teams",
+    "full": "Authentication sample for Microsoft Teams"
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#F3F4F6",
+  "configurableTabs": [
+
+  ],
+  "staticTabs": [
+    {
+      "contentUrl": "https://918da0c5.ngrok.io/tab/simple",
+      "entityId": "simpleAuth",
+      "name": "Simple Auth",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://918da0c5.ngrok.io/tab/DetailsUI",
+      "entityId": "DetailsAuth",
+      "name": "Details Auth",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://918da0c5.ngrok.io/tab/Kano",
+      "entityId": "KanoAuth",
+      "name": "Kano Auth",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "contentUrl": "https://918da0c5.ngrok.io/tab/silent?loginHint={loginHint}&userObjectId={userObjectId}&tenantId={tid}",
+      "entityId": "silentAuth",
+      "name": "Silent Auth",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "349f9ea5-a6ee-4993-b256-8bbc38d3c68c",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "permissions": [
+    "messageTeamMembers",
+    "identity"
+  ],
+  "validDomains": [
+    "918da0c5.ngrok.io", 
+    "localbottestapp.azurewebsites.net"
+  ]
+}
