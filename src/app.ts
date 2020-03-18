@@ -106,6 +106,8 @@ app.get("/tab/silent-start", (req, res) => { res.render("tab/silent/silent-start
 app.get("/tab/silent-end", (req, res) => { res.render("tab/silent/silent-end"); });
 app.get("/tab/DetailsUI", (req, res) => { res.render("tab/Kano/DetailsUI"); });
 app.get("/tab/Kano", (req, res) => { res.render("tab/Kano/Kano"); });
+app.get("/tab/KanoUseraccount", (req, res) => { res.render("tab/Kano/KanoUseraccount"); });
+app.get("/tab/KanoUsername", (req, res) => { res.render("tab/Kano/KanoUsername"); });
 
 let openIdMetadata = new apis.OpenIdMetadata("https://login.microsoftonline.com/common/.well-known/openid-configuration");
 let validateIdToken = new apis.ValidateIdToken(openIdMetadata, appId).listen();     // Middleware to validate id_token
